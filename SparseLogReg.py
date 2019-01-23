@@ -1,3 +1,13 @@
+"""
+Sparse logistic regression Fig2
+2018/2019
+Authors:   
+        Jeremy Lefort-Besnard   jlefortbesnard (at) tuta (dot) io
+        Danilo Bzdok  danilobzdok (at) gmail (dot) com
+"""
+
+print __doc__
+
 import numpy as np
 from scipy.stats import scoreatpercentile
 import pandas as pd
