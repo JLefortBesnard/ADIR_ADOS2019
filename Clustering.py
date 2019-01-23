@@ -2,7 +2,7 @@
 """
 Clustering Fig 1 + SFig3
 2018/2019
-Authors:   
+Author:   
         Jeremy Lefort-Besnard   jlefortbesnard (at) tuta (dot) io
 """
 
