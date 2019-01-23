@@ -1,3 +1,13 @@
+
+"""
+Nested logistic regression Fig 3-4-5 + SFig5-6-7 + data for STable4 
+2018/2019
+Author:   
+        Jeremy Lefort-Besnard   jlefortbesnard (at) tuta (dot) io
+"""
+
+
+
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
