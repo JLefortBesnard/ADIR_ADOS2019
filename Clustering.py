@@ -1,3 +1,14 @@
+
+"""
+Clustering Fig 1 + SFig3
+2018/2019
+Authors:   
+        Jeremy Lefort-Besnard   jlefortbesnard (at) tuta (dot) io
+"""
+
+print __doc__
+
+
 import numpy as np
 from scipy.stats import scoreatpercentile
 import pandas as pd
