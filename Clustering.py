@@ -41,7 +41,6 @@ X_scaled = ss_X.fit_transform(X)
 
 df_scaled = pd.DataFrame(X_scaled, columns=X_colnames)
 
-
 ########################
 ### START THE ANALYSIS #
 ########################
@@ -70,7 +69,19 @@ head(my.data)
 
 # Apply the nbclust package
 NbClust(my.data, min.nc = 2, max.nc = 5, method="kmeans")
-"""    
+""" 
+######### OUTPUT R #####################
+
+# * Among all indices:                                                
+# * 6 proposed 2 as the best number of clusters 
+# * 15 proposed 3 as the best number of clusters 
+# * 1 proposed 4 as the best number of clusters 
+# * 1 proposed 5 as the best number of clusters 
+# 
+#                    ***** Conclusion *****                            
+# 
+# * According to the majority rule, the best number of clusters is  3 
+#########################################
 
 #####################
 #### plot Fig. 1 ####
