@@ -5,7 +5,7 @@ Nested logistic regression Fig 3-4-5 + SFig5-6-7 + data for STable4
 Author:   
         Jeremy Lefort-Besnard   jlefortbesnard (at) tuta (dot) io
 """
-
+print(__doc__)
 
 
 import numpy as np
@@ -13,8 +13,6 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import RidgeClassifier
 from sklearn.linear_model import Ridge
-from sklearn.cross_validation import StratifiedShuffleSplit
-from sklearn.cross_validation import ShuffleSplit
 import seaborn as sns
 from matplotlib import pylab as plt
 from scipy.stats import scoreatpercentile
