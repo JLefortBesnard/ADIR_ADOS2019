@@ -6,7 +6,7 @@ Author:
         Jeremy Lefort-Besnard   jlefortbesnard (at) tuta (dot) io
 """
 
-print __doc__
+print(__doc__)
 
 
 import numpy as np
@@ -22,7 +22,7 @@ from matplotlib import pylab as plt
 ### DATA ###
 ############
 
-df = pd.read_excel('ABIDE_full_GSIQ.xlsx').reset_index(drop=True)
+df = pd.read_excel('ABIDE_full_GSIQ.xlsx', index_col=[0]).reset_index(drop=True)
 df_raw = df.drop(['Sex', 'Age', 'FIQ'], axis=1)
 
 
