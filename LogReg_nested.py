@@ -76,13 +76,13 @@ df = df_scaled
 # graph 2: Y = Age, X = IQ + gender #  DEFINING DATASET
 ######################################
 
-X_df1 = df[df.Sex == "Men"][df.FIQ > df.FIQ.median()].reset_index(drop=True)  # men low FIQ #110 subjects
+X_df1 = df[df.Sex == "Men"][df.FIQ >= df.FIQ.median()].reset_index(drop=True)  # men high FIQ #110 subjects
 
-X_df2 = df[df.Sex == "Men"][df.FIQ < df.FIQ.median()].reset_index(drop=True)  # men high FIQ #111 subjects
+X_df2 = df[df.Sex == "Men"][df.FIQ < df.FIQ.median()].reset_index(drop=True)  # men low FIQ #111 subjects
 
-X_df3 = df[df.Sex == "Women"][df.FIQ > df.FIQ.median()].reset_index(drop=True)  # women low FIQ #17 subjects
+X_df3 = df[df.Sex == "Women"][df.FIQ >= df.FIQ.median()].reset_index(drop=True)  # women high FIQ #17 subjects
 
-X_df4 = df[df.Sex == "Women"][df.FIQ < df.FIQ.median()].reset_index(drop=True)  # women high FIQ # 16 subjects
+X_df4 = df[df.Sex == "Women"][df.FIQ < df.FIQ.median()].reset_index(drop=True)  # women low FIQ # 16 subjects
 
 X_all = [X_df1, X_df2, X_df3, X_df4]
 n = [len(X_df1), len(X_df2), len(X_df3), len(X_df4)]
